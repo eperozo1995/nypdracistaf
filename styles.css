@@ -1,0 +1,118 @@
+ {
+    box-sizing: border-box;
+}
+
+/* title {font-size: x-large;} WHAT IS THIS?*/
+
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px}
+
+/* responsive images */
+img {
+    width: 100%;
+}
+h1 { 
+    color: rgb(0, 0, 0);
+    font-size: 3em;}  
+/* .headline {text-align: center; width: 100%; margin: 0 auto;} */
+
+.main_img {
+    width: 100%;}
+
+ .container, .icon-container {
+    padding: 10px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+.subcontainer { 
+    padding: 10px; 
+    width:100%; 
+    margin:0 auto}
+
+.icon-container img {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
+.byline{ 
+    text-align:center;
+    width: 100%; margin: 0 auto;}
+}
+.graphic-text {
+    margin: auto;
+}
+/* img{text-align: center; } */
+
+.head-photo {text-align: center;}
+
+.icon {text-align: center;}
+
+.top-photo {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.date {text-align: center;}
+
+h1{font-size: 30px;}
+
+h1,h3,p{font-family:'Oswald', sans-serif;} 
+
+h2 {text-align; font-style: italic; }
+
+h3 {text-transform: uppercase; text-align: center}
+
+p{;line: height 24px;font-family: 'Oswald', sans-serif;}
+
+.chart {
+width: 600px;
+}
+
+span{color: black;}
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+    .icon-container {
+        
+        display: flex;
+        justify-content: space-between;
+      
+    }
+
+    .graphic {
+        /* There are many ways to handle sizing, but flex-basis is the one that I like best for control.
+     * There are 4 elements so I made it 20%. With justify content set to space between, the extra 3% per element will go to negative space
+     * serving as gutters */
+        flex-basis: 20%;
+        /* can turn on this one or the one in icon-container. */
+        /* justify-content: space-between; */
+        /* font-size: 1.3em; */
+    }
+
+    .graphic-text {
+        padding: 10px;
+    
+    }
+
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+
+.container{max-width: 600px; margin: 0 auto;} 
+img{max-width: 700px;} 
+
+figcaption{padding: 5px; color: grey;
+}
